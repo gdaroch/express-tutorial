@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>EJS Template</title>
+  </head>
+  <body>
+    <h1>EJS</h1>
+    <h2>Users:</h2>
+    <ul>
+      <% users.forEach((user) => { %>
+        <li>Name: <%= user.name %> - Age: <%= user.age %></li>
+      <% }) %>
+    </ul>
+  </body>
+</html>
